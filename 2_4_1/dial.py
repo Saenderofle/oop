@@ -14,7 +14,7 @@ class Dial:
         self.draw_border()
         radius = 200
         for i in range(12):
-            angle = i * 30
+            angle = 70 - i * 30
             x = radius * math.cos(math.radians(angle))
             y = radius * math.sin(math.radians(angle))
             digit = Digit((x, y - 10), i + 1)
